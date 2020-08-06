@@ -1,0 +1,4 @@
+Open a HTML file and right-click on the editor and click on Open with Live Server . 
+Open the Command Pallete by pressing F1 or ctrl+shift+P and type Live Server: 
+Open With Live Server to start a server or type Live Server: 
+Stop Live Server to stop a server.

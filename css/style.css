@@ -1,0 +1,365 @@
+
+/*Font Awesome Free Icon */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+/* General Style*/
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+*{
+    margin: auto;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::before, ::after{
+    box-sizing: border-box;
+}
+.section{
+    background-color: #f2f2fc;
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+}
+.section .container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+.section-title h2{
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+}
+.padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+.shadow-dark{
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.hidden{
+    display: none!important;
+}
+.main-content{
+    padding-left: 270px;
+}
+/* Aside */
+.aside{
+    width: 270px;
+    background-color: #fdf9ff;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-right: #e8dfec;
+}
+.aside .logo{
+    padding: 30px 0; 
+    margin: 15px;
+}
+.aside .logo a{
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    line-height: 50px;
+}
+.aside .logo a::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.aside .logo a::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid #d4d4e3;
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 30px;
+    z-index: 11;
+    border-radius: 5px;
+    background-color: #fdf9ff;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.aside .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    display: inline-block;
+    position: relative;
+}
+.aside .nav-toggler span::before{
+    content: '';
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.aside .nav-toggler span::after{
+    content: '';
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.aside .nav{
+    list-style: none;
+    margin: 80px 15px;
+    padding: 0;
+}
+.aside .nav li{
+    display: block;
+}
+.aside .nav li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #302e4d;
+    text-decoration: none;
+    line-height: 45px;
+    display: block;
+    border-bottom: 1px solid #e8dfec;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+.aside .nav li a:not(.active):hover{
+    padding-left: 5px;
+}
+.aside .nav li a .fa{
+    margin-right: 5px;
+}
+.aside .copyright-text{
+    font-size: 13px;
+    color:#7d7d7d;
+    margin: 15px;
+}
+/* Home */
+.home{
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.home .intro{
+    text-align: center;
+}
+
+.home .intro img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #ffffff;
+}
+
+.home .intro h1{
+    font-size: 30px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 20px 0 8px;
+}
+
+.home .intro p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    color: #504e70;
+}
+
+.home .intro .social-links{
+    margin-top: 25px;
+}
+
+.home .intro .social-links a{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .intro p{
+    display: block;
+    width: fit-content;
+    position: relative;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.home .intro .social-links a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* About Section */
+
+.about .about-content{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #302e4d;
+}
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+}
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+
+.skill-per{
+    height: 20px;
+    background-color: #0fbcf9;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: -16px;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+

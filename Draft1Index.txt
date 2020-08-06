@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>
+            Kinza Ahmed
+        </title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section id="hero">
+            <div class="hero container">
+                <div>
+                    <h1>Hello, My Name Is Kinza</h1>
+                    <a href="#" type="button" class="cta">Portfolio</a>
+                    <!-- <img src="ResumePicture.jpg" alt="" class="box-img"> -->
+                </div>
+            </div>
+        </section>
+        <div class="box">
+            <img src="ResumePicture.jpg" alt="" class="box-img">
+            <h1>DarkCode</h1>
+        </div>
+    </body>
+</html>

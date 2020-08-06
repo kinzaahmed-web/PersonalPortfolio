@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kinza Ahmed</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
+        <link rel="stylesheet" href="css/circle.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <!-- Main Conatiner -->
+        <div class="main-container">
+            <!-- Aside -->
+            <div class="aside">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">Kinza</a>
+                </div>
+                <!-- Nav Toggler Button -->
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <!-- Nav -->
+                <ul class="nav">
+                    <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#"><i class="fa fa-briefcase"></i> Projects</a></li>
+                    <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                </ul>
+                <!-- Copyright -->
+                <div class="copyright-text">
+                    &copy; Kinza Ahmed Website 
+                </div>
+            </div>
+            <!-- Aside End -->
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Home Section -->
+                <section class="home section">
+                    <div class="intro">
+                        <img src="ResumePicture.jpg" alt="profile" class="shadow-dark">
+                        <h1>Kinza Ahmed</h1>
+                        <p class>This is me.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="#"><i class="fa fa-file-pdf-o"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Home Section End -->
+                <!-- About Section -->
+                <section class="about section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>About Me</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h1>I'm Kinza and I am a rising junior at the University of Minnesota </h1>
+                                    <p>
+                                        I am majoring in Computer Science and minoring in management. Ever since I was a young girl,
+                                        I have always had a keen interest in technology and how it has modernized our world and has become a part of our everyday life. 
+                                        I would like to be a successful woman in technology to show the world that women in STEM can also achieve great things.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="circleBar">
+                                <h1>CIRCLE Progress Bar</h1>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="round" data-value="0.87" data-size="200" data-thickness="12">
+                                            <strong></strong>
+                                            <span><i class="fa fa-html5"></i>
+                                            HTML SKILLS
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="round" data-value="0.87" data-size="200" data-thickness="12">
+                                            <strong></strong>
+                                            <span><i class="fa fa-css"></i>
+                                            CSS SKILLS
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="round" data-value="0.87" data-size="200" data-thickness="12">
+                                            <strong></strong>
+                                            <span><i class="fa fa-JavaScript"></i>
+                                            JAVASCRIPT SKILLS
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn" onclick="Circle('.round');">Refresh</button>
+                            </div>>
+                        </div>
+                    </div>
+                </section>
+                <!-- About Section End -->
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+            <script>
+                function Circle(el){
+                    $(el).circleProgress({fill: {circle: '#ff5c5c'}})
+                    .on('circle-animation-progress', function(event,progress, 
+                    stepValue){
+                        $(this).find('strong').text(String(stepValue.toFixed(2))+'%'
+                        );
+                    });
+                };
+
+                Circle('.round');
+            </script>
+            <!-- Main Content End -->
+        </div>
+        <!-- Main Container End --> 
+    </body>
+</html>
