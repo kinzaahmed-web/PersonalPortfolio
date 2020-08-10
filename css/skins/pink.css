@@ -14,6 +14,9 @@
     color: #ec1839;
 }
 
+.btn,
+.experience .timeline .circle-dot,
+.experience .timeline .timeline-item::before,
 .section-title h2::before,
 .section-title h2::after,
 .aside .nav-toggler span,
