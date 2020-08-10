@@ -38,3 +38,14 @@
 section button:hover{
     background-color: #ff5c5c;
 }
+
+button{
+    background: none;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #338033;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}

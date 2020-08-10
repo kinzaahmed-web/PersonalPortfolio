@@ -22,6 +22,9 @@ body{
 ::before, ::after{
     box-sizing: border-box;
 }
+input, textarea, select{
+    font-family: 'Montserrat', sans-serif;
+}
 .section{
     background-color: #f2f2fc;
     min-height: 100vh;
@@ -311,55 +314,190 @@ body{
     margin: 0;
 }
 
-.skills{
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
+/* Experience Section */
+
+.experience{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
-.skill-name{
-    font-size: 18px;
+.experience h3.title{
+    font-size: 24px;
+    margin-bottom: 15px;
     font-weight: 700;
-    margin: 8px 0;
+    color: #302e4d;
 }
 
-.skill-bar{
-    height: 20px;
-    background: #cacaca;
-    border-radius: 8px;
+.experience .timeline-box{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
-.skill-per{
-    height: 20px;
-    background-color: #0fbcf9;
-    border-radius: 8px;
-    width: 0;
-    transition: 1s linear;
+.experience .timeline{
+    background-color: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    width: 100%;
     position: relative;
 }
 
-.skill-per::before{
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
+.experience .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
 }
-
-.skill-per::after{
+.experience .timeline .timeline-item:last-child{
+    padding-bottom: 0px;
+}
+.experience .timeline .timeline-item::before{
     content: '';
+    width: 1px;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background: -16px;
-    top: -16px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
+    height: 100%;
+    left: 7px;
+    top: 0;
 }
 
+.experience .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 15px;
+    width: 15px;
+    left: 0px;
+    border-radius: 50px;
+}
+
+.experience .timeline .timeline-date{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #504e70;
+}
+
+.experience .timeline .timeline-location .fa,
+.experience .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+
+.experience .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #302e4d;
+}
+
+.experience .timeline .timeline-text{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.btn{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #ffffff;
+    border-radius: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.btn:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+
+.contact .contact-info-item{
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa{
+    font-size: 40px;
+}
+
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+    font-weight: 400;
+}
+
+.contact .contact-form{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #d4d4e3;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #504e70;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus{
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
+}
