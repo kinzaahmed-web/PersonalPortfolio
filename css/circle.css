@@ -1,7 +1,11 @@
 #circleBar{
-    margin-top: 180px;
+    margin-top: 35px;
     text-align: center;
     font-family: tahoma;
+}
+
+#circleBar .row .col-md-3{
+    margin : 50px;
 }
 
 #circleBar .round{
@@ -48,4 +52,5 @@ button{
     border-radius: 4px;
     transition: .6s;
     overflow: hidden;
+    margin-bottom: 50px;
 }

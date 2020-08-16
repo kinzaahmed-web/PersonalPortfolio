@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
         <link rel="stylesheet" href="css/circle.css" type="text/css">
+        
+        <!-- Style Switcher -->
+        <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+        <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css"disabled>
+        <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+        <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+        <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+        <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
     </head>
     <body>
 
@@ -25,12 +33,11 @@
                 </div>
                 <!-- Nav -->
                 <ul class="nav">
-                    <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                    <li><a href="#"><i class="fa fa-tasks"></i> Skills</a></li>
-                    <li><a href="#"><i class="fa fa-history"></i> Experience</a></li>
-                    <li><a href="#"><i class="fa fa-briefcase"></i> Projects</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa fa-tasks"></i> Skills</a></li>
+                    <li><a href="#experience"><i class="fa fa-history"></i> Experience</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
                 </ul>
                 <!-- Copyright -->
                 <div class="copyright-text">
@@ -41,22 +48,22 @@
             <!-- Main Content -->
             <div class="main-content">
                 <!-- Home Section -->
-                <section class="home section">
+                <section class="home section" id="home">
                     <div class="intro">
                         <img src="ResumePicture.jpg" alt="profile" class="shadow-dark">
                         <h1>Kinza Ahmed</h1>
                         <p class>This is me.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-envelope"></i></a>
-                            <a href="#"><i class="fa fa-file-pdf-o"></i></a>
+                            <a href="https://www.linkedin.com/in/kinzaahmed/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="https://github.com/kinzaahmed-web" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="mailto:kinza1013@yahoo.com"><i class="fa fa-envelope"></i></a>
+                            <a href="resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
                         </div>
                     </div>
                 </section>
                 <!-- Home Section End -->
                 <!-- About Section -->
-                <section class="about section">
+                <section class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -80,7 +87,7 @@
                 <!-- About Section End-->
 
                 <!-- Skills Section -->
-                <section class="skills section">
+                <section class="skills section" id="skills">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -155,7 +162,7 @@
                 <!-- Skills Section End -->
 
                 <!-- Experience Section -->
-                <section class="experience section">
+                <section class="experience section" id="experience">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -251,7 +258,7 @@
                 <!-- Experience Section End -->
 
                 <!-- Contact Section -->
-                <section class="contact section">
+                <section class="contact section" id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -272,7 +279,7 @@
                                         <input type="text" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
+                                <div class="form-item col-12 padd-15">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Subject">
                                     </div>
@@ -293,11 +300,42 @@
                 </section>
                 <!-- Contact Section End -->
             </div>
+            <!-- Live Style Switcher -->
+            <div class="style-switcher">
+                <div class="toggle-style-switcher">
+                    <i class="fa fa-cog fa-spin"></i>
+                </div>
+                <h5>Style Switcher</h5>
+                <ul>
+                    <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle(
+                        'pink')"></a></li>
+                    <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle(
+                        'blue')"></a></li>
+                    <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle(
+                        'green')"></a></li>
+                    <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle(
+                        'orange')"></a></li>
+                    <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle(
+                        'yellow')"></a></li>
+                </ul>
+                <h5>Body Skin</h5>
+                <label>
+                    <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+                    Light
+                </label>
+                <label>
+                    <input type="radio" class="body-skin" name="body-style" value="dark">
+                    Dark
+                </label>
+            </div>
+            <!-- Live Style Switcher End -->
+            <script src="js/script.js"></script>
+            <script src="js/styleSwitcher.js"></script>
             <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
             <script>
                 function Circle(el){
-                    $(el).circleProgress({fill: {circle: '#ff5c5c'}})
+                    $(el).circleProgress({fill: {circle: '#ec1839'}})
                     .on('circle-animation-progress', function(event,progress, 
                     stepValue){
                         $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2)+'%'
