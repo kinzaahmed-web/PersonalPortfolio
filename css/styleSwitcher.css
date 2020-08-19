@@ -5,11 +5,11 @@
     top: 20px;
     right: 0;
     z-index: 10;
-    background-color: #ffffff;
     padding: 15px;
     border: 1px solid #d4d4e3;
     border-right: none;
     border-radius: 0 0 0 5px;
+    background-color: #f2f2fc;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     -webkit-transition: all 0.3s ease;
