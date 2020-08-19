@@ -291,29 +291,48 @@ input, textarea, select{
 
 /* About Section */
 
-.about .about-content{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+.right h1{
+    margin-left: 15px;
 }
 
-.about .about-content .about-text{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about-content .about-text h3{
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: #302e4d;
-}
-.about .about-content .about-text p{
-    font-size: 16px;
+.space{
+    font-size: 20px;
     line-height: 25px;
     color: #504e70;
-    margin: 0;
+    margin-left: 15px;
+}
+
+.words{
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 15px;
+    color: #0377fc8c;
+    letter-spacing: 3px;
+    text-align: left;
+}
+.left {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1010101010;
+}
+
+.headshot{
+    width: 100%;
+    height: 100;
+}
+  
+  /* Control the right side */
+.right {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 /* Experience Section */
@@ -505,6 +524,7 @@ input, textarea, select{
     padding: 0 50px;
 }
 
+  
 /* Dark Body */
 
 body.dark .section{
@@ -515,7 +535,8 @@ body.dark .aside{
 }
 body.dark #circleBar,
 body.dark #circleBar .round strong,
-body.dark .about .about-content,
+body.dark .space,
+body.dark .right h1,
 body.dark .section-title h2,
 body.dark .home .intro h1,
 body.dark .aside .logo a,
@@ -571,3 +592,32 @@ body.dark .aside .nav li a{
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .name {
+      margin-bottom: 20px;
+    }
+    .rightcontent {
+      padding: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .bold-text {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    .bio {
+      font-size: 16px;
+    }
+    .credit {
+      font-size: 12px;
+    }
+    .rightcontent {
+      padding: 30px;
+    }
+    .image {
+      height: 240px;
+      max-height: 30vh;
+    }
+  }
