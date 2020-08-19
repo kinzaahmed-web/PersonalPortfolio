@@ -316,7 +316,6 @@ input, textarea, select{
     width: 50%;
     float: left;
     height: 100%;
-    z-index: 1010101010;
 }
 
 .headshot{
@@ -620,4 +619,20 @@ body.dark .aside .nav li a{
       height: 240px;
       max-height: 30vh;
     }
+
+    .words{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+    .headshot{
+        width: 200%;
+    }
+      
+    .right {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
   }
