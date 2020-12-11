@@ -1,6 +1,7 @@
 # Personal Portfolio
 
 This repository contains code to build out a personal portfolio to showcase my development skills. 
+https://kinzaahmed-web.github.io/PersonalPortfolio/
 
 ## Features
  - Sections
